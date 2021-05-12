@@ -36,7 +36,7 @@
 {#if ready}
 	<a-scene
 		embedded
-		arjs="sourceWidth: window.innerWidth > window.innerHeight ? 640 : 480; sourceHeight: window.innerWidth > window.innerHeight ? 480 : 640"
+		arjs="sourceWidth: window.innerWidth > window.innerHeight ? 1280 : 720; sourceHeight: window.innerWidth > window.innerHeight ? 720 : 1280"
 	>
 		<a-marker preset="hiro">
 			<a-box
