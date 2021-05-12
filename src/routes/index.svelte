@@ -21,8 +21,8 @@
 		mounted = true;
 	});
 
-	let width = 640;
-	let height = 480;
+	let width = 1280;
+	let height = 720;
 </script>
 
 <svelte:head>
