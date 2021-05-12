@@ -20,6 +20,9 @@
 		console.log('mounted');
 		mounted = true;
 	});
+
+	let width = 640;
+	let height = 480;
 </script>
 
 <svelte:head>
@@ -36,7 +39,7 @@
 {#if ready}
 	<a-scene
 		embedded
-		arjs="sourceWidth: window.innerWidth > window.innerHeight ? 1280 : 720; sourceHeight: window.innerWidth > window.innerHeight ? 720 : 1280"
+		arjs="sourceWidth: window.innerWidth > window.innerHeight ? {width} : {height}; sourceHeight: window.innerWidth > window.innerHeight ? {height} : {width}"
 	>
 		<a-marker preset="hiro">
 			<a-box
